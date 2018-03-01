@@ -1,0 +1,11 @@
+Mîndru Alexandru-Ionuț
+Grupa 321CB
+
+Tema implementeaza 7 tipuri de procese prin extindere de la clasa process
+2 tipuri de cache prin extindere de la clasa cache si 3 tipuri de schedulers
+prin extindere de la clasa scheduler.
+
+Cache-ul este construit sub forma de vectori, se adauga la final si se scoate
+de la inceput.
+
+Fisierele suplimentare luate de pe cs.curs nu sunt modificate.

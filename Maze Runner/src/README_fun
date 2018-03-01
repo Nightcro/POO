@@ -1,0 +1,25 @@
+Mindru Alexandru Ionut
+Grupa 321CB
+
+Nu stiu ce ar trebui sa scriu in Readme, totul este explicat in Javadoc.
+
+Tema implementeaza construirea unui labirint. In cadrul acestui labirint vom
+folosi un cobai (erou) pentru a gasi drumul catre iesire.
+Mai intai pentru task-ul 1 il plasam
+pe portalul de intrare si cu inteligenta lui limitata incearca sa gaseasca
+calea mergand pe toate drumurile posibile luand in ordine celulele de la
+dreapta la stanga prin care trece in functie de orientarea sa in labirint.
+Desigur cu inteligenta limitata stie doar sa numere si sa aleaga drumul
+pe care a fost de cele mai putine ori, dar are tinere de minte??
+Avand inteligenta limitata reuseste sa gaseasca finalul labirintului, dar nu
+inainte de a se lovi de toti peretii posibili sau de un camp misterios ce
+inconjoara labirintul.
+
+Ulterior pentru task-ul 2, dupa cateva experimente facute asupra cobaiului,
+acesta a devenit capabil sa analizeze algortimi. Pus in labirint, cobaiul s-a
+decis sa-si construiasca propria masina turing universala ce simuleaza
+algoritmul lui Lee. MTU i-a calculat drumul cel mai scurt catre portalul de
+iesire analizand intreg labirintul. Cobaiul a devenit putin mai inteligent.
+
+Creatorul fericit ca i-a reusit experimentul, a trecut mai departe, iar micul
+cobai a fost uitat sau e doar inceputul ? TBC

@@ -1,0 +1,34 @@
+Mîndru Alexandru-Ionuț
+Grupa 321CB
+
+Tema implementeaza evolutia actiunilor in cadrul unei burse de valori.
+De asemenea s-au utilizat diverse design pattern-uri precum Singleton, Factory,
+Visitor si Observer.
+
+Clasa Feed contine va contine stream-ul de date intr-o lista log, de asemenea
+exista si lista log_feed ce contine comenzile date pana in momentul crearii sau
+printarii unui observator.
+
+Interfetele IObserver,ISubject cu clasele MessageSet, Observer determina
+pattern-ul Observer. OperatorsFactory construieste un observator, de asemenea
+implenteaza design pattern-ul Singleton.
+
+In MessageSet se afla o structure de HashMap ce contine observerii, id-ul unui
+observer reprezinta cheia pt HashMap. De asemenea contine cele 3 metode de add,
+remove si update. Metoda update initiaza secventa de printare a unui observer.
+
+In Observer avem metodele de workLog, itereaza prin log_feed pentru a determina
+ultimele feed-uri adaugate si nr de aparitii ale lor.
+Indexul e folosit pentru a determina locatia la care am ramas in log_feed cand
+reapelam observatorul pentru printare.
+Metoda print printeaza toate feed-urile care trec de filtru, daca se foloseste
+filtrul, altfel se afiseaza tot.
+
+ObserversFactory creeaza arborele de filtru pentru observator.
+Mai intai string-ul dat (adica filtrul ex:
+((le value 4.8) || (ge value 4.9)) && (eq name GOLD)) este transformat in
+postfix si pus in outputStack, apoi pe baza acestei stive se creeaza arborele.
+
+OperatorsFactory implementeaza design pattern-ul Factory pentru crearea de
+noduri.
+TreeVisitor implementeaza design pattern-ul de Visitor.

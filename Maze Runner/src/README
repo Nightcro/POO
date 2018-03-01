@@ -1,0 +1,25 @@
+Mindru Alexandru Ionut
+Grupa 321CB
+
+Cand se formeaza matricea aceasta este inconjurata de celule de tip Void, pentru
+a determina daca eroul a iesit sau nu inafara matricei, astfel aruncam exceptie.
+
+Task 1. Eroul se afla pe pozitia de inceput, se adauga pe lista de miscari
+celula initiala, apoi se ia vecinii in functie de orientarea eroului, se
+adauga pe rand pe lista de miscari si se muta eroul, in caz de eroul iese
+inafara labirintului sau intra intr-un zid, metoda move din clasa Cursor va
+arunca o exceptie ce va fi prinsa si va determina sa se treaca la urmatoarea
+celula din lista de vecini sortata.
+
+Task 2. Se foloseste algoritmul lui Lee. Se seteaza greutate pozitiei de
+start cu 1, intram in while, luam prima celula din lista queue, cum obtinerea
+de vecini se bazeaza pe clasa cursor, doar vom seta coordonatele acestuia,
+nu-l vom muta pe erou. Se obtine vecinii in ordinea E, N, W, S, orientarea
+implicita a eroului fiind nord, astfel obtinandu-se acea lista de vecini, mai
+intai se verifica daca lista de vecini contine portalul de final, in caz de
+il contine algoritmul se opreste seteaza o referinta de la portalul de iesire
+catre ultima celula pe care se afla eroul si se intoarce functia, altfel se
+ia fiecare celula din lista, se verifica daca eroul se poate seta pe el si
+daca am mai fost pe celula respectiva, se seteaza weight-ul si referinta la
+celula pe care se afla si se adauga pe lista de mutari.
+
